@@ -1,0 +1,81 @@
+Q.2 Difference between var,let,const with code examples.
+---------------------------------------------------------
+
+1] Var:-
+
+Scope of a var:
+
+var declaration are globally scoped or function /locally scoped.
+The scope is global when we declare var outside the function.This means that when we declare var outside the function it available in all program.
+
+var is function scoped.This means that when we declare var inside any function that is available only in the function.
+
+Ex. 
+
+var abc="Hello";
+function newFunction()
+{
+var pqr="Let'sUpgrade";
+} 
+
+console.log(pqr);//error:hello is not defined
+
+Here,abc is globally scoped because it is outside the function while pqr is function scoped so it is not available outside the function.
+
+var veriable redeclared and updated:
+
+Ex.
+
+var hello="Let'sUpgrade";
+var hello="Day 1 Assignment";
+
+hello="JS";
+========================================================================
+
+2]Let:
+
+Scope of a let:
+
+let is block scoped.
+so veriable declared inside function block with let is only available for use within block.
+
+Ex.
+
+   let greeting = "say Hi";
+   let times = 4;
+
+   if (times > 3) {
+        let hello = "say Hello instead";
+        console.log(hello);// "say Hello instead"
+    }
+   console.log(hello) // hello is not defined
+
+We can see that hello is defined inside the block,so it can not accesible outside the block.
+
+let can be updated but not re-declared:
+
+This means that let veriable updated but can't redeclared.
+
+Ex.
+
+let great="Hello";
+
+great="JS";
+
+let great="Web Devlopment";//error:Identifier great is already defined.
+==========================================================================
+3]Const:
+
+const declarations is block scoped:
+
+const declarations can only be accessed within the block they were declared.
+
+const cannot be updated or re-declared:
+This means that the value of a variable declared with const remains the same within its scope.
+
+Ex.
+const greeting = "say Hi";
+    greeting = "say Hello instead";// error: Assignment to constant variable.
+===============================================================================
+
+

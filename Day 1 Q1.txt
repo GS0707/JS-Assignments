@@ -1,0 +1,45 @@
+Q.1 Explain the various methods in console function.
+----------------------------------------------------
+1)console.log():
+Mainly used to print output to the console.We can put anytype inside the log(),
+be a string,boolean,etc.
+
+Ex.console.log("abc");
+   console.log(1);
+   console.log(true);
+
+Output:
+abc
+1
+true
+================================================================================
+2)console.error():
+It is used to log error to the console.Useful in testing of code.
+
+Ex.console.error("The error have occur")
+
+Output:
+The error have occur
+=================================================================================
+3)console.warn():
+It is used to log warning message to console.
+
+Ex.console.warn("Warning")
+
+Output:
+Warning
+=================================================================================
+4)console.clear():
+It is besically used to clear the console.
+==================================================================================
+5)console.time() and console.timeEnd():
+Whenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods provided by the javascript console object. They take a label which must be same.
+==============================================================================================
+6)console.table():
+This method is use to generate table inside a console.The input must me array or object.
+
+Ex.console.log({'a':1,'b':2});
+==========================================================================================
+
+
+ 

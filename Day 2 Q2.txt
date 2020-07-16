@@ -1,0 +1,76 @@
+Q.2 Methods of string and array.
+
+String Methods:
+
+1. charAt(index):
+Returns the first character at specified index.
+Ex.
+var str="Hello LetsUpgrade";
+var index=str.charAt(1);
+
+Output:	index=1
+
+2.str1.concat(str2):
+Join two Strings.
+Ex.
+var str1="Hello";
+var str2="JS";
+var str=str1.concat(str2);
+
+Output: str = HelloJS
+
+3. endsWith(str):
+Check whether string ends with specified string.
+Ex.
+var str1="Hello everyone.Have a nice day";
+var	end=str1.endsWith("day");
+
+Output: end = true.
+
+4. includes(str):
+Check whether String containe character of specified string.
+Ex.
+var str = "Hello world, welcome to the universe.";
+var n = str.includes("world");
+
+Output: n=true.
+
+5.replace(str):
+Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+Ex.
+var str = "Visit Microsoft!";
+var res = str.replace("Microsoft", "Let'sUpgrade");
+----------------------------------------------------------------------------
+Array Methods:
+
+1.concat():
+Join two or more arrays and return copy of the joined array.
+Ex.
+var hege = ["Cecilie", "Lone"];
+var stale = ["Emil", "Tobias", "Linus"];
+var children = hege.concat(stale);
+
+2.fill(str):
+The fill() method fills the specified elements in an array with a static value.
+Ex.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.fill("Kiwi"); 
+
+3. join():
+Convert the elements of an array into a string:
+Ex.
+var fruits=["Banana","Orange","Apple"];
+var energy=fruits.join();
+
+4.length:
+Return the length of the array.
+Ex.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.length; 
+
+5.pop():
+Remove the last element of array.
+Ex.
+var name=["Abc","Pqr","Xyz"];
+name.pop();
+--------------------------------------------------------------------
